@@ -8,17 +8,18 @@
 
 #include <iostream>
 
-double udftemp(double celsius)             // user defined function protoype
+using namespace std;
+double udtemp(double ctemp)         // user defined function prototype, double used to store value
 {
     using namespace std;
-    return 1.8 * celsius + 32.0;
+    return 1.8 * ctemp + 32.0;      // return value
 }
 
 int main()
 {
     using namespace std;
-    double temp;
-    cout << "Please enter a Celsius value:";
-    cin >> temp;
-    cout << temp << "degrees Celsius is" << udftemp(temp) << "degrees Fahrenheit" << endl;
+    cout << "Please enter a Celsius value:";    // character output
+    double ctemp;                               // function defined
+    cin >> ctemp;                               // user input, function called, value will be returned to user defned prototype
+    cout << ctemp << "degrees Celsius is" << udtemp(ctemp) << "degrees Fahrenheit";
 }
