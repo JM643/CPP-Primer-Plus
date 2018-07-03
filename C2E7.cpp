@@ -8,6 +8,10 @@
 
 #include <iostream>
 void time(int h, int m);
+{
+    using namespace std; 
+    cout << "Time" << h << ":" << m << endl; 
+}
 
 int main()
 {
@@ -22,8 +26,3 @@ int main()
     return 0;
 }
 
-void time(int h, int m)
-{
-    using namespace std;
-    cout << "Time:" << h << ":" << m << endl;
-}
