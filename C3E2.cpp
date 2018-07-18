@@ -11,18 +11,22 @@
 int main()
 {
     using namespace std;
-    cout << "This program will determine your body mass index (BMI)." << endl;  // Determine BMI
+    const double foot = 12;                                                         // not sure how to use this variable in program
+    const double meters = 0.0254;
+    const double kilo = 2.2;
+    int bmi;
+    
+    
+    cout << "This program will determine your body mass index (BMI).\n";             // Determine BMI
     cout << "What is your height in inches:";
-    int height;                                         //  Height in inches
+    float height;
     cin >> height;
-    cout << "What is weight in pounds:";                // Weight in pounds
+    height = height * meters;                                                        // Height converted to meters
+    cout << "What is weight in pounds:";                                             // Weight in pounds
     float weight;
     cin >> weight;
-    float meters;
-    meters = height * 0.0254;                           // Height in inches converted to meters
-    float m_kilo;
-    m_kilo = weight / 2.2;                              // Weight in pounds converted to mass in kilograms
-    cout << "Your BMI is:" << m_kilo / (meters * meters) << endl;
+    weight = weight/kilo;                                                            // Weight converts to kilogram
+    bmi = weight/(height * height);                                                  // BMI formula
+    cout << "Your BMI is:" << bmi << endl;
     return 0;
-    
 }
