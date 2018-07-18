@@ -21,7 +21,7 @@ int main()
     cout << "What is your height in inches:";
     float height;
     cin >> height;
-    height = height * meters;                                                        // Height converted to meters
+    height = height * meters;                                                        // Height in inches converted to meters
     cout << "What is weight in pounds:";                                             // Weight in pounds
     float weight;
     cin >> weight;
