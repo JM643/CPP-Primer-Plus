@@ -26,8 +26,8 @@ int main()
     days = seconds / 86400;
     hours = seconds / 3600 % day;
     minutes = seconds / sec % min;
-    n_sec = seconds % sec;
+    n_sec = seconds % sec;                          // new seconds variable
    
-    cout << seconds <<" "  "seconds " " = " " " << days << " " "days," " " << hours <<" " "hours," " " << minutes << " " "minutes," " " << n_sec << " " "seconds" << endl;
+    cout << seconds <<" "  "seconds " " = " " " << days << " " "day(s)," " " << hours <<" " "hours," " " << minutes << " " "minutes," " " << n_sec << " " "seconds" << endl;
     return 0;
 }
