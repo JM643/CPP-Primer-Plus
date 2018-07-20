@@ -14,11 +14,7 @@ int main()
     const long sec = 60;
     const long min = 60;
     const long day = 24;
-    long seconds;
-    long minutes;
-    long hours;
-    long days;
-    long n_sec;
+    long seconds, minutes, hours, days, n_sec;
     
     cout << "Enter the number of seconds:";
     cin >> seconds;
