@@ -9,7 +9,7 @@
 #include <iostream>
 
 using namespace std;
-float w_pop, us_pop;
+long long w_pop, us_pop;
 
 int main()
 {
@@ -17,6 +17,6 @@ int main()
     cin >> w_pop;
     cout << "Enter the population of the US:" " ";
     cin >> us_pop;
-    cout << "The population of the US is" " " << us_pop/w_pop * 100 <<"%" " of the world population." << endl;
+    cout << "The population of the US is" " " << double (us_pop)/w_pop * 100 <<"%" " of the world population." << endl;
     return 0;
 }
