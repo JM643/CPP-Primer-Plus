@@ -18,7 +18,7 @@ int main()
     using namespace std;
     long seconds, minutes, hours, days, n_sec;
     
-    cout << "Enter the number of seconds:";
+    cout << "Enter the number of seconds:" " ";
     cin >> seconds;
     
     days = seconds / day;
