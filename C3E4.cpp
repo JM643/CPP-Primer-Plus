@@ -11,19 +11,20 @@ int main()
 {
     using namespace std;
     
-    const long sec = 60;
-    const long min = 60;
-    const long day = 24;
+    const long min = 60;                            // total seconds in a minute
+    const long hr = 3600;                           // total seconds in an hour
+    const long day = 86400;                         // total seconds in a day
+    const long hrs_in_day = 24;                     // total hours in a day
     long seconds, minutes, hours, days, n_sec;
     
     cout << "Enter the number of seconds:";
     cin >> seconds;
     
-    days = seconds / 86400;
-    hours = seconds / 3600 % day;
-    minutes = seconds / sec % min;
-    n_sec = seconds % sec;                          // new seconds variable
-   
-    cout << seconds <<" "  "seconds " " = " " " << days << " " "day(s)," " " << hours <<" " "hours," " " << minutes << " " "minutes," " " << n_sec << " " "seconds" << endl;
+    days = seconds / day;
+    hours = seconds / hr % hrs_in_day;
+    minutes = seconds / 60 % min;                   
+    n_sec = seconds % 60;                            // new seconds variable
+    
+    cout << seconds <<" " "seconds " " = " " " << days << " " "day(s)," " " << hours <<" " "hours," " " << minutes << " " "minutes," " " << n_sec << " " "seconds" << endl;
     return 0;
 }
